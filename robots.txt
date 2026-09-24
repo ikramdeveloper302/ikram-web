@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ikram-tech.netlify.app/sitemap.xml

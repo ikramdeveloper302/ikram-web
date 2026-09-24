@@ -1,1 +1,1804 @@
- <!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta name="description" content="Ikram Web creates modern, responsive and professional websites for businesses and individuals."> <meta name="keywords" content="web design, web development, Ikram Web, websites"> <meta name="author" content="Ikram Web"> <title> Ikram Web | Professional Web Design & Development </title> <link rel="stylesheet" href="style.css"> </head> <body> <!-- Navigation --> <header> <nav class="navbar"> <div class="logo"> Ikram Web </div> <div class="nav-links"> <a href="#home">Home</a> <a href="#about">About</a> <a href="#services">Services</a> <a href="#contact">Contact</a> </div> </nav> </header> <!-- Home --> <main> <section class="hero" id="home"> <div class="hero-content"> <p class="small-title"> PROFESSIONAL WEB SERVICES </p> <h1> We Build Modern Websites For Your Business </h1> <p class="hero-text"> We create modern, responsive and professional websites that help businesses grow online. </p> <div class="hero-buttons"> <a href="#services"> <button class="primary-btn"> View Services </button> </a> <a href="#contact"> <button class="secondary-btn"> Contact Us </button> </a> </div> </div> </section> <!-- About --> <section class="about" id="about"> <div class="section-container"> <p class="section-label"> ABOUT US </p> <h2> About Ikram Web </h2> <p class="about-text"> Ikram Web is a web development service focused on creating modern, beautiful and responsive websites. We help businesses and individuals build a professional presence online. </p> </div> </section> <!-- Services --> <section class="services" id="services"> <div class="section-container"> <p class="section-label"> WHAT WE DO </p> <h2> Our Services </h2> <div class="service-container"> <div class="service-card"> <div class="service-icon"> 💻 </div> <h3> Web Design </h3> <p> Modern and attractive website designs for businesses and individuals. </p> </div> <div class="service-card"> <div class="service-icon"> 🌐 </div> <h3> Web Development </h3> <p> Fast, responsive and professional websites that work on mobile and desktop. </p> </div> <div class="service-card"> <div class="service-icon"> 🔧 </div> <h3> Website Maintenance </h3> <p> Website updates, improvements and maintenance for existing websites. </p> </div> </div> </div> </section> <!-- Why Choose Us --> <section class="why-us"> <div class="section-container"> <p class="section-label"> WHY CHOOSE US </p> <h2> Why Choose Ikram Web? </h2> <div class="features"> <div class="feature"> <h3> 📱 Responsive </h3> <p> Websites that work perfectly on mobile, tablet and computer. </p> </div> <div class="feature"> <h3> ⚡ Fast </h3> <p> Clean and optimized websites designed for good performance. </p> </div> <div class="feature"> <h3> 🎨 Modern Design </h3> <p> Clean and professional designs that make your business stand out. </p> </div> </div> </div> </section> <!-- Contact --> <section class="contact" id="contact"> <div class="section-container"> <p class="section-label"> GET IN TOUCH </p> <h2> Let's Build Your Website </h2> <p class="contact-text"> Have a website project in mind? Contact us and let's discuss your project. </p> <!-- WhatsApp --> <a href="https://wa.me/923295629126" target="_blank"> <button class="whatsapp-btn"> 💬 Contact Us on WhatsApp </button> </a> <!-- Contact Form --> <form class="contact-form" onsubmit="sendMessage(event)"> <input type="text" id="name" placeholder="Your Name" required > <input type="email" id="email" placeholder="Your Email" required > <textarea id="userMessage" rows="5" placeholder="Tell us about your project..." required ></textarea> <button type="submit" class="primary-btn"> Send Message </button> </form> </div> </section> <!-- JavaScript Test --> <section class="interactive"> <div class="section-container"> <h2> Try Our Website </h2> <p id="welcome"> Welcome to Ikram Web </p> <p id="message"></p> <button id="myButton" onclick="showMessage()"> Click Me </button> </div> </section> </main> <!-- Footer --> <footer> <div class="footer-container"> <div> <h3> Ikram Web </h3> <p> Modern Websites for Businesses </p> </div> <div class="footer-links"> <a href="#home"> Home </a> <a href="#about"> About </a> <a href="#services"> Services </a> <a href="#contact"> Contact </a> </div> </div> <div class="copyright"> <p> &copy; 2026 Ikram Web. All Rights Reserved. </p> </div> </footer> <!-- JavaScript --> <script src="script.js"></script> </body> </html>        
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- =====================================================
+    BASIC SEO
+    ====================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Ikram Tech provides practical guides about web development, web design, SEO, freelancing, technology and digital skills.">
+
+    <meta name="keywords"
+          content="Ikram Tech, web development, web design, SEO, freelancing, HTML, CSS, JavaScript, digital skills, website development">
+
+    <meta name="author"
+          content="Ikram Tech">
+
+    <meta name="robots"
+          content="index, follow">
+
+    <meta name="theme-color"
+          content="#07111f">
+
+    <meta name="referrer"
+          content="strict-origin-when-cross-origin">
+
+
+    <!-- =====================================================
+    CANONICAL
+    ====================================================== -->
+
+    <link rel="canonical"
+          href="https://ikramtech.netlify.app/">
+
+
+    <!-- =====================================================
+    OPEN GRAPH
+    ====================================================== -->
+
+    <meta property="og:type"
+          content="website">
+
+    <meta property="og:title"
+          content="Ikram Tech | Learn Digital Skills & Build Your Future">
+
+    <meta property="og:description"
+          content="Learn web development, web design, SEO, freelancing and useful digital skills with Ikram Tech.">
+
+    <meta property="og:url"
+          content="https://ikramtech.netlify.app/">
+
+    <meta property="og:site_name"
+          content="Ikram Tech">
+
+    <meta property="og:image"
+          content="https://ikramtech.netlify.app/images/profile.jpg">
+
+    <meta property="og:image:alt"
+          content="Ikram Tech">
+
+
+    <!-- =====================================================
+    TWITTER / X CARD
+    ====================================================== -->
+
+    <meta name="twitter:card"
+          content="summary_large_image">
+
+    <meta name="twitter:title"
+          content="Ikram Tech | Digital Skills & Technology">
+
+    <meta name="twitter:description"
+          content="Practical guides about web development, web design, SEO, freelancing and technology.">
+
+    <meta name="twitter:image"
+          content="https://ikramtech.netlify.app/images/profile.jpg">
+
+
+    <!-- =====================================================
+    GOOGLE FONT
+    ====================================================== -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+
+    <!-- =====================================================
+    WEBSITE TITLE
+    ====================================================== -->
+
+    <title>
+        Ikram Tech | Learn Digital Skills & Build Your Future
+    </title>
+
+
+    <!-- =====================================================
+    STYLESHEET
+    ====================================================== -->
+
+    <link rel="stylesheet"
+          href="style.css">
+
+
+    <!-- =====================================================
+    STRUCTURED DATA
+    ====================================================== -->
+
+    <script type="application/ld+json">
+
+    {
+        "@context": "https://schema.org",
+
+        "@type": "WebSite",
+
+        "name": "Ikram Tech",
+
+        "url": "https://ikramtech.netlify.app/",
+
+        "description": "Ikram Tech provides practical guides about web development, web design, SEO, freelancing, technology and digital skills.",
+
+        "publisher": {
+            "@type": "Organization",
+            "name": "Ikram Tech",
+            "email": "mailto:ikramtechpk@gmail.com",
+            "telephone": "+923439537947"
+        },
+
+        "author": {
+            "@type": "Person",
+            "name": "Ikram Ullah",
+            "image": "https://ikramtech.netlify.app/images/profile.jpg",
+            "url": "https://ikramtech.netlify.app/"
+        }
+    }
+
+    </script>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+    HEADER
+    ====================================================== -->
+
+    <header class="site-header">
+
+        <div class="container nav-container">
+
+            <a href="index.html"
+               class="logo"
+               aria-label="Ikram Tech Home">
+
+                <span class="logo-mark">
+                    IK
+                </span>
+
+                <span>
+                    Ikram Tech
+                </span>
+
+            </a>
+
+
+            <nav class="nav-links"
+                 aria-label="Main Navigation">
+
+                <a href="index.html"
+                   class="active">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="services.html">
+                    Services
+                </a>
+
+                <a href="portfolio.html">
+                    Portfolio
+                </a>
+
+                <a href="blog.html">
+                    Blog
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <button class="menu-toggle"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <main>
+
+
+        <!-- =====================================================
+        HERO SECTION
+        ====================================================== -->
+
+        <section class="hero">
+
+            <div class="container hero-container">
+
+
+                <!-- HERO CONTENT -->
+
+                <div class="hero-content reveal">
+
+                    <span class="section-label">
+                        LEARN • BUILD • GROW
+                    </span>
+
+
+                    <h1>
+                        Learn Digital Skills.
+                        <span>
+                            Build Your Future.
+                        </span>
+                    </h1>
+
+
+                    <p>
+                        Welcome to Ikram Tech — a practical technology platform
+                        focused on web development, web design, SEO, freelancing
+                        and useful digital skills.
+                    </p>
+
+
+                    <div class="cta-buttons">
+
+                        <a href="blog.html"
+                           class="btn btn-primary">
+                            Explore Articles
+                        </a>
+
+
+                        <a href="contact.html"
+                           class="btn btn-secondary">
+                            Get In Touch
+                        </a>
+
+                    </div>
+
+
+                    <!-- PROFILE MINI INFO -->
+
+                    <div class="author-box">
+
+                        <div class="author-avatar">
+
+                            <img src="images/profile.jpg"
+                                 alt="Ikram Ullah - Ikram Tech"
+                                 loading="lazy">
+
+                        </div>
+
+
+                        <div>
+
+                            <strong>
+                                Ikram Tech
+                            </strong>
+
+                            <p>
+                                Web Development • Web Design • SEO
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- HERO VISUAL -->
+
+                <div class="hero-visual reveal"
+                     aria-label="Web development illustration">
+
+
+                    <div class="code-window">
+
+
+                        <!-- WINDOW BAR -->
+
+                        <div class="window-bar">
+
+                            <div>
+
+                                <span class="window-dot"></span>
+
+                                <span class="window-dot"></span>
+
+                                <span class="window-dot"></span>
+
+                            </div>
+
+                            <span>
+                                ikram-tech.html
+                            </span>
+
+                        </div>
+
+
+                        <!-- CODE -->
+
+                        <div class="code-content">
+
+                            <p>
+
+                                <span class="code-blue">
+                                    &lt;section
+                                </span>
+
+                                <span class="code-green">
+                                    class=
+                                </span>
+
+                                <span class="code-yellow">
+                                    "future"
+                                </span>
+
+                                <span class="code-blue">
+                                    &gt;
+                                </span>
+
+                            </p>
+
+
+                            <p>
+
+                                &nbsp;&nbsp;
+
+                                <span class="code-blue">
+                                    &lt;h1&gt;
+                                </span>
+
+                                Learn Digital Skills
+
+                                <span class="code-blue">
+                                    &lt;/h1&gt;
+                                </span>
+
+                            </p>
+
+
+                            <p>
+
+                                &nbsp;&nbsp;
+
+                                <span class="code-blue">
+                                    &lt;p&gt;
+                                </span>
+
+                                Build Your Future
+
+                                <span class="code-blue">
+                                    &lt;/p&gt;
+                                </span>
+
+                            </p>
+
+
+                            <p>
+
+                                <span class="code-blue">
+                                    &lt;/section&gt;
+                                </span>
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- FLOATING CARDS -->
+
+                    <div class="floating-card one">
+
+                        💻 Web Development
+
+                    </div>
+
+
+                    <div class="floating-card two">
+
+                        🔍 SEO & Growth
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+        STATS
+        ====================================================== -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="stats">
+
+                    <div class="stats-grid">
+
+
+                        <div class="stat reveal">
+
+                            <strong>
+                                100%
+                            </strong>
+
+                            <span>
+                                Practical Focus
+                            </span>
+
+                        </div>
+
+
+                        <div class="stat reveal">
+
+                            <strong>
+                                24/7
+                            </strong>
+
+                            <span>
+                                Online Resources
+                            </span>
+
+                        </div>
+
+
+                        <div class="stat reveal">
+
+                            <strong>
+                                4+
+                            </strong>
+
+                            <span>
+                                Core Topics
+                            </span>
+
+                        </div>
+
+
+                        <div class="stat reveal">
+
+                            <strong>
+                                2026
+                            </strong>
+
+                            <span>
+                                Updated Content
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+        TOPICS
+        ====================================================== -->
+
+        <section class="section">
+
+            <div class="container">
+
+
+                <div class="section-heading reveal">
+
+                    <span class="section-label">
+                        WHAT YOU CAN LEARN
+                    </span>
+
+                    <h2>
+                        Explore Digital Skills
+                    </h2>
+
+                    <p>
+                        Start with the fundamentals and gradually develop
+                        practical skills for the modern digital world.
+                    </p>
+
+                </div>
+
+
+
+                <div class="topic-grid">
+
+
+                    <!-- WEB DEVELOPMENT -->
+
+                    <article class="topic-card reveal">
+
+                        <div class="card-icon">
+                            &lt;/&gt;
+                        </div>
+
+                        <h3>
+                            Web Development
+                        </h3>
+
+                        <p>
+                            Learn HTML, CSS, JavaScript and the fundamentals
+                            of creating modern websites.
+                        </p>
+
+                        <a href="blog.html"
+                           class="card-link">
+                            Explore Development →
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- WEB DESIGN -->
+
+                    <article class="topic-card reveal">
+
+                        <div class="card-icon">
+                            🎨
+                        </div>
+
+                        <h3>
+                            Web Design
+                        </h3>
+
+                        <p>
+                            Understand responsive layouts, visual structure
+                            and user-friendly website design.
+                        </p>
+
+                        <a href="blog.html"
+                           class="card-link">
+                            Explore Design →
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- SEO -->
+
+                    <article class="topic-card reveal">
+
+                        <div class="card-icon">
+                            🔍
+                        </div>
+
+                        <h3>
+                            SEO
+                        </h3>
+
+                        <p>
+                            Learn basic on-page SEO, technical fundamentals
+                            and search-friendly content practices.
+                        </p>
+
+                        <a href="blog.html"
+                           class="card-link">
+                            Explore SEO →
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- FREELANCING -->
+
+                    <article class="topic-card reveal">
+
+                        <div class="card-icon">
+                            💼
+                        </div>
+
+                        <h3>
+                            Freelancing
+                        </h3>
+
+                        <p>
+                            Discover practical skills, portfolio building
+                            and useful information about online freelancing.
+                        </p>
+
+                        <a href="blog.html"
+                           class="card-link">
+                            Explore Freelancing →
+                        </a>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+        ABOUT / PROFILE
+        ====================================================== -->
+
+        <section class="section">
+
+            <div class="container about-grid">
+
+
+                <!-- PROFILE CONTENT -->
+
+                <div class="about-content reveal">
+
+                    <span class="section-label">
+                        ABOUT IKRAM TECH
+                    </span>
+
+
+                    <h2>
+                        Simple Technology Learning for Everyone
+                    </h2>
+
+
+                    <p>
+                        Ikram Tech is a technology and digital-skills platform
+                        created to make useful online information easier to
+                        understand.
+                    </p>
+
+
+                    <p>
+                        The website covers practical topics including web
+                        development, web design, SEO, freelancing and other
+                        digital skills.
+                    </p>
+
+
+                    <ul class="check-list">
+
+                        <li>
+                            ✓ Beginner-friendly learning resources
+                        </li>
+
+                        <li>
+                            ✓ Practical website development guides
+                        </li>
+
+                        <li>
+                            ✓ SEO and content resources
+                        </li>
+
+                        <li>
+                            ✓ Freelancing and digital skills
+                        </li>
+
+                    </ul>
+
+
+                    <a href="about.html"
+                       class="btn btn-primary">
+                        Learn More About Us
+                    </a>
+
+                </div>
+
+
+
+                <!-- PROFILE + SKILLS -->
+
+                <div class="skills-box reveal">
+
+
+                    <div class="author-avatar"
+                         style="width:110px;height:110px;margin:0 auto 20px;">
+
+                        <img src="images/profile.jpg"
+                             alt="Ikram Ullah - Founder of Ikram Tech"
+                             loading="lazy">
+
+                    </div>
+
+
+                    <h3 style="text-align:center;">
+                        Ikram Tech
+                    </h3>
+
+
+                    <p style="text-align:center;margin-bottom:25px;">
+                        Technology • Web • Digital Skills
+                    </p>
+
+
+
+                    <!-- SKILL 1 -->
+
+                    <div class="skill">
+
+                        <div class="skill-header">
+
+                            <span>
+                                Web Development
+                            </span>
+
+                            <span>
+                                90%
+                            </span>
+
+                        </div>
+
+                        <div class="skill-bar">
+
+                            <span class="skill-progress"
+                                  style="width:90%;">
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- SKILL 2 -->
+
+                    <div class="skill">
+
+                        <div class="skill-header">
+
+                            <span>
+                                Web Design
+                            </span>
+
+                            <span>
+                                85%
+                            </span>
+
+                        </div>
+
+                        <div class="skill-bar">
+
+                            <span class="skill-progress"
+                                  style="width:85%;">
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- SKILL 3 -->
+
+                    <div class="skill">
+
+                        <div class="skill-header">
+
+                            <span>
+                                SEO
+                            </span>
+
+                            <span>
+                                80%
+                            </span>
+
+                        </div>
+
+                        <div class="skill-bar">
+
+                            <span class="skill-progress"
+                                  style="width:80%;">
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- SKILL 4 -->
+
+                    <div class="skill">
+
+                        <div class="skill-header">
+
+                            <span>
+                                Freelancing
+                            </span>
+
+                            <span>
+                                80%
+                            </span>
+
+                        </div>
+
+                        <div class="skill-bar">
+
+                            <span class="skill-progress"
+                                  style="width:80%;">
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+        SERVICES
+        ====================================================== -->
+
+        <section class="section">
+
+            <div class="container">
+
+
+                <div class="section-heading reveal">
+
+                    <span class="section-label">
+                        OUR SERVICES
+                    </span>
+
+                    <h2>
+                        Digital Solutions
+                    </h2>
+
+                    <p>
+                        Explore website and digital services available
+                        through Ikram Tech.
+                    </p>
+
+                </div>
+
+
+
+                <div class="services-grid">
+
+
+                    <article class="service-card reveal">
+
+                        <div class="service-icon">
+                            🎨
+                        </div>
+
+                        <h3>
+                            Web Design
+                        </h3>
+
+                        <p>
+                            Clean and responsive website layouts designed
+                            for different digital projects.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="service-card reveal">
+
+                        <div class="service-icon">
+                            💻
+                        </div>
+
+                        <h3>
+                            Web Development
+                        </h3>
+
+                        <p>
+                            Website development using HTML, CSS and
+                            JavaScript fundamentals.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="service-card reveal">
+
+                        <div class="service-icon">
+                            🔧
+                        </div>
+
+                        <h3>
+                            Website Maintenance
+                        </h3>
+
+                        <p>
+                            Website updates, content changes,
+                            improvements and troubleshooting.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="service-card reveal">
+
+                        <div class="service-icon">
+                            🔍
+                        </div>
+
+                        <h3>
+                            SEO Optimization
+                        </h3>
+
+                        <p>
+                            Basic technical and on-page SEO improvements
+                            for websites.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="service-card reveal">
+
+                        <div class="service-icon">
+                            📱
+                        </div>
+
+                        <h3>
+                            Responsive Design
+                        </h3>
+
+                        <p>
+                            Website layouts designed to work across
+                            phones, tablets and desktop screens.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="service-card reveal">
+
+                        <div class="service-icon">
+                            ⚡
+                        </div>
+
+                        <h3>
+                            Website Optimization
+                        </h3>
+
+                        <p>
+                            Practical improvements to website structure,
+                            usability and performance.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+
+
+                <div style="text-align:center;margin-top:35px;">
+
+                    <a href="services.html"
+                       class="btn btn-primary">
+                        View All Services
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+        FEATURED ARTICLE
+        ====================================================== -->
+
+        <section class="section">
+
+            <div class="container">
+
+
+                <div class="featured-article reveal">
+
+
+                    <div class="article-visual"
+                         aria-hidden="true">
+
+                        <div class="article-visual-icon">
+                            🌐
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="article-content">
+
+                        <span class="section-label">
+                            FEATURED ARTICLE
+                        </span>
+
+
+                        <h2>
+                            How to Create a Website for Free in 2026
+                        </h2>
+
+
+                        <p>
+                            A beginner-friendly guide explaining the basic
+                            steps to create, publish and improve a website
+                            using modern tools and practical methods.
+                        </p>
+
+
+                        <div class="article-meta">
+
+                            <span>
+                                Beginner Guide
+                            </span>
+
+                            <span>
+                                •
+                            </span>
+
+                            <span>
+                                2026
+                            </span>
+
+                        </div>
+
+
+                        <a href="article-create-website.html"
+                           class="btn btn-primary">
+                            Read Full Guide
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+        PORTFOLIO
+        ====================================================== -->
+
+        <section class="section">
+
+            <div class="container">
+
+
+                <div class="section-heading reveal">
+
+                    <span class="section-label">
+                        PORTFOLIO
+                    </span>
+
+                    <h2>
+                        Website Project Ideas
+                    </h2>
+
+                    <p>
+                        Explore different types of websites and digital
+                        projects that can be created.
+                    </p>
+
+                </div>
+
+
+
+                <div class="portfolio-grid">
+
+
+                    <article class="portfolio-card reveal">
+
+                        <div class="portfolio-image">
+                            💼
+                        </div>
+
+                        <div class="portfolio-content">
+
+                            <h3>
+                                Business Website
+                            </h3>
+
+                            <p>
+                                A professional online presence for a
+                                small business or service.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="portfolio-card reveal">
+
+                        <div class="portfolio-image">
+                            💻
+                        </div>
+
+                        <div class="portfolio-content">
+
+                            <h3>
+                                Technology Website
+                            </h3>
+
+                            <p>
+                                A structured platform for technology
+                                guides and useful resources.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="portfolio-card reveal">
+
+                        <div class="portfolio-image">
+                            📝
+                        </div>
+
+                        <div class="portfolio-content">
+
+                            <h3>
+                                Blog Website
+                            </h3>
+
+                            <p>
+                                A clean platform for publishing articles,
+                                tutorials and educational content.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="portfolio-card reveal">
+
+                        <div class="portfolio-image">
+                            👤
+                        </div>
+
+                        <div class="portfolio-content">
+
+                            <h3>
+                                Personal Portfolio
+                            </h3>
+
+                            <p>
+                                A professional website for presenting
+                                skills, projects and services.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="portfolio-card reveal">
+
+                        <div class="portfolio-image">
+                            📱
+                        </div>
+
+                        <div class="portfolio-content">
+
+                            <h3>
+                                Mobile Website
+                            </h3>
+
+                            <p>
+                                Responsive website experiences designed
+                                with mobile visitors in mind.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="portfolio-card reveal">
+
+                        <div class="portfolio-image">
+                            📈
+                        </div>
+
+                        <div class="portfolio-content">
+
+                            <h3>
+                                SEO Website
+                            </h3>
+
+                            <p>
+                                Websites structured around search-friendly
+                                technical and content fundamentals.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+
+
+                <div style="text-align:center;margin-top:35px;">
+
+                    <a href="portfolio.html"
+                       class="btn btn-secondary">
+                        View Portfolio
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+        LEARNING PATH
+        ====================================================== -->
+
+        <section class="section">
+
+            <div class="container">
+
+
+                <div class="section-heading reveal">
+
+                    <span class="section-label">
+                        LEARNING PATH
+                    </span>
+
+                    <h2>
+                        Your Digital Journey
+                    </h2>
+
+                    <p>
+                        Follow a simple four-step path from learning
+                        fundamentals to building useful projects.
+                    </p>
+
+                </div>
+
+
+
+                <div class="learning-grid">
+
+
+                    <article class="learning-card reveal">
+
+                        <span class="learning-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Learn
+                        </h3>
+
+                        <p>
+                            Understand the fundamentals and build a
+                            strong foundation.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="learning-card reveal">
+
+                        <span class="learning-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Practice
+                        </h3>
+
+                        <p>
+                            Practice concepts through small exercises
+                            and practical examples.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="learning-card reveal">
+
+                        <span class="learning-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Build
+                        </h3>
+
+                        <p>
+                            Create real projects to improve your skills
+                            and portfolio.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="learning-card reveal">
+
+                        <span class="learning-number">
+                            04
+                        </span>
+
+                        <h3>
+                            Grow
+                        </h3>
+
+                        <p>
+                            Keep learning and gradually develop your
+                            digital career.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+        FAQ
+        ====================================================== -->
+
+        <section class="section">
+
+            <div class="container">
+
+
+                <div class="section-heading reveal">
+
+                    <span class="section-label">
+                        FAQ
+                    </span>
+
+                    <h2>
+                        Frequently Asked Questions
+                    </h2>
+
+                    <p>
+                        Answers to some common questions about
+                        Ikram Tech.
+                    </p>
+
+                </div>
+
+
+
+                <div class="faq-list">
+
+
+                    <div class="faq-item reveal">
+
+                        <button class="faq-question"
+                                type="button"
+                                aria-expanded="false">
+
+                            <span>
+                                What is Ikram Tech?
+                            </span>
+
+                            <span>
+                                +
+                            </span>
+
+                        </button>
+
+
+                        <div class="faq-answer">
+
+                            <p>
+                                Ikram Tech is a technology and digital
+                                learning platform covering web development,
+                                web design, SEO, freelancing and useful
+                                digital skills.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="faq-item reveal">
+
+                        <button class="faq-question"
+                                type="button"
+                                aria-expanded="false">
+
+                            <span>
+                                Can beginners learn from Ikram Tech?
+                            </span>
+
+                            <span>
+                                +
+                            </span>
+
+                        </button>
+
+
+                        <div class="faq-answer">
+
+                            <p>
+                                Yes. The website provides simple and
+                                practical resources designed to help
+                                beginners understand digital topics.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="faq-item reveal">
+
+                        <button class="faq-question"
+                                type="button"
+                                aria-expanded="false">
+
+                            <span>
+                                What topics are covered?
+                            </span>
+
+                            <span>
+                                +
+                            </span>
+
+                        </button>
+
+
+                        <div class="faq-answer">
+
+                            <p>
+                                Topics include web development, web design,
+                                SEO, freelancing, websites, technology
+                                and digital skills.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="faq-item reveal">
+
+                        <button class="faq-question"
+                                type="button"
+                                aria-expanded="false">
+
+                            <span>
+                                How can I contact Ikram Tech?
+                            </span>
+
+                            <span>
+                                +
+                            </span>
+
+                        </button>
+
+
+                        <div class="faq-answer">
+
+                            <p>
+                                You can contact Ikram Tech through the
+                                Contact page, email or WhatsApp.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+        FINAL CTA
+        ====================================================== -->
+
+        <section class="cta-section">
+
+            <div class="container">
+
+
+                <div class="cta-box reveal">
+
+                    <span class="section-label">
+                        START TODAY
+                    </span>
+
+
+                    <h2>
+                        Ready to Build Your Digital Future?
+                    </h2>
+
+
+                    <p>
+                        Explore useful resources, learn new skills and
+                        start building practical digital projects.
+                    </p>
+
+
+                    <div class="cta-buttons">
+
+
+                        <a href="blog.html"
+                           class="btn btn-primary">
+                            Explore Articles
+                        </a>
+
+
+                        <a href="https://wa.me/923439537947?text=Hello%20Ikram%20Tech%2C%20I%20would%20like%20to%20know%20more."
+                           class="btn btn-secondary"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            WhatsApp Us
+                        </a>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+    FOOTER
+    ====================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+
+            <div class="footer-grid">
+
+
+                <!-- BRAND -->
+
+                <div class="footer-brand">
+
+                    <a href="index.html"
+                       class="logo">
+
+                        <span class="logo-mark">
+                            IK
+                        </span>
+
+                        <span>
+                            Ikram Tech
+                        </span>
+
+                    </a>
+
+
+                    <p>
+                        Practical resources about technology,
+                        web development, web design, SEO,
+                        freelancing and digital skills.
+                    </p>
+
+                </div>
+
+
+
+                <!-- QUICK LINKS -->
+
+                <div class="footer-links">
+
+                    <h3>
+                        Quick Links
+                    </h3>
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                    <a href="about.html">
+                        About
+                    </a>
+
+                    <a href="services.html">
+                        Services
+                    </a>
+
+                    <a href="portfolio.html">
+                        Portfolio
+                    </a>
+
+                </div>
+
+
+
+                <!-- RESOURCES -->
+
+                <div class="footer-links">
+
+                    <h3>
+                        Resources
+                    </h3>
+
+                    <a href="blog.html">
+                        Blog
+                    </a>
+
+                    <a href="article-create-website.html">
+                        Website Guide
+                    </a>
+
+                    <a href="privacy-policy.html">
+                        Privacy Policy
+                    </a>
+
+                    <a href="disclaimer.html">
+                        Disclaimer
+                    </a>
+
+                    <a href="terms.html">
+                        Terms & Conditions
+                    </a>
+
+                </div>
+
+
+
+                <!-- CONTACT -->
+
+                <div class="footer-links">
+
+                    <h3>
+                        Contact
+                    </h3>
+
+
+                    <a href="mailto:ikramtechpk@gmail.com">
+                        ikramtechpk@gmail.com
+                    </a>
+
+
+                    <a href="tel:+923439537947">
+                        +92 343 9537947
+                    </a>
+
+
+                    <a href="https://wa.me/923439537947"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        WhatsApp
+                    </a>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- FOOTER BOTTOM -->
+
+            <div class="footer-bottom">
+
+                <p>
+                    © <span class="current-year">2026</span>
+                    Ikram Tech. All rights reserved.
+                </p>
+
+
+                <p>
+                    Technology • Web • Digital Skills
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+    BACK TO TOP
+    ====================================================== -->
+
+    <button id="topBtn"
+            class="top-btn"
+            type="button"
+            aria-label="Back to top">
+
+        ↑
+
+    </button>
+
+
+
+    <!-- =====================================================
+    JAVASCRIPT
+    ====================================================== -->
+
+    <script src="script.js"
+            defer>
+    </script>
+
+
+</body>
+
+</html>
